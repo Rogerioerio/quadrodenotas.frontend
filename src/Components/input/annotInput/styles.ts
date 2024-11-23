@@ -7,7 +7,7 @@ export const style = StyleSheet.create({
     control:{
         backgroundColor:'white',
         width:'100%',
-        height:'70%',
+        height:'80%',
         fontSize:22,
         textAlignVertical:'top',
         textAlign:'left',
