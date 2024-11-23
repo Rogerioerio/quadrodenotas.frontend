@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { AnnotInsertPage } from './src/screens/AnnotInsertPage';
+
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from "@react-navigation/native";
+import { ListPage } from './src/screens/ListPage';
+
+const Tab = createBottomTabNavigator();
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>hello!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <NavigationContainer>
+        <Tab.Navigator screenOptions={{
+          tabBarLabelPosition: 'beside-icon',
+          tabBarShowLabel: false,
+          }}>
+          <Tab.Screen name="Criar Nota" component={AnnotInsertPage} />
+          <Tab.Screen name="Lista de Anotações" component={ListPage} />
+        </Tab.Navigator>
+      </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
