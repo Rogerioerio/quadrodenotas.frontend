@@ -1,3 +1,4 @@
+import { StyleSheet } from 'react-native';
 import { AnnotInsertPage } from './src/screens/AnnotInsertPage';
 import { ListPage } from './src/screens/ListPage';
 
@@ -15,7 +16,8 @@ export default function App() {
             tabBarShowLabel: false,
             tabBarHideOnKeyboard: true,
             headerShown: false,
-            animation: 'shift'
+            animation: 'shift',
+            tabBarStyle: styles.tabBar
         }}>
           <Tab.Screen 
             name="Criar Nota" 
@@ -29,3 +31,10 @@ export default function App() {
       </NavigationContainer>
   );
 }
+
+const styles = StyleSheet.create({
+  tabBar: {
+    borderColor: 'black',
+    borderTopWidth: 4,
+  }
+})

@@ -9,7 +9,7 @@ const handlePress = () => {
 export function BtnSubmit() {
     return(
         <View style={style.control}>
-            <Button title="Salvar nota" onPress={handlePress} color={'#9d2a7f'}/>
+            <Button title="Salvar nota" onPress={handlePress} color={'#9897A9'}/>
         </View>
     )
 }

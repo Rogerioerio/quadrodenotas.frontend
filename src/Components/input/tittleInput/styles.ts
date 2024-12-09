@@ -5,7 +5,7 @@ export const style = StyleSheet.create({
         width:'100%'
     },
     control:{
-        backgroundColor:'white',
+        backgroundColor:'#C0C0C0',
         width:'100%',
         height:50,
         fontSize:22,

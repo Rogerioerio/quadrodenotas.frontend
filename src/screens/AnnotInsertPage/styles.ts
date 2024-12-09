@@ -7,7 +7,7 @@ export const style = StyleSheet.create({
         flex:1,
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor:'#efebdf',
+        backgroundColor:'#353839',
     },
     formsTxt:{
         width: width * 0.9,
