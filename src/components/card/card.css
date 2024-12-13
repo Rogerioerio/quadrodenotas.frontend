@@ -19,3 +19,7 @@
 .card .headerCard .title {
     margin: 0;
 }
+
+.card .headerCard .date {
+    opacity: 55%;
+}

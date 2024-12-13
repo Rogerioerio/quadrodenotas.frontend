@@ -1,18 +1,18 @@
 import "./card.css"
 
 interface CardProps {
-    id: string,
+    annot_id: number,
     title: string,
     content: string,
-    date: Date
+    instant: string
 }
 
-export function Card ({ id, title, content, date }: CardProps) {
+export function Card ({ annot_id, title, content, instant }: CardProps) {
     return(
-        <div className="card" id={id}>
+        <div className="card" id={annot_id.toLocaleString()}>
             <div className="headerCard">
                 <h1 className="title">{title}</h1>
-                <label className="date">{date.toLocaleDateString('pt-BR')}</label>
+                <label className="date">{instant}</label>
             </div>
             <div className="content">
                 <p>{content}</p>
