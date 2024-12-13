@@ -1,0 +1,20 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #D7D2CB;
+    border-radius: 2rem;
+    padding: 1rem;
+    max-width: 50rem;
+    min-width: 10rem;
+    gap: 1rem;
+}
+
+.card .headerCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .headerCard .title {
+    margin: 0;
+}
