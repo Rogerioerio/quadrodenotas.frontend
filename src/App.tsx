@@ -2,13 +2,17 @@ import { } from 'react'
 import './App.css'
 import { Card } from './components/card/card'
 import { useNoteData } from './hooks/useNoteData'
+import NoteForms from './components/noteForms/noteForms';
 
 function App() {
   const { data } = useNoteData();
 
   return (
     <div className='container'>
-      <h1>Quadro de Notas</h1>
+      <header className='mainHeader'>
+        <h1>Quadro de Notas</h1>
+      </header>
+      <NoteForms />
       <div className='card-grid'>
         {data?.map(NoteData => 
           <Card

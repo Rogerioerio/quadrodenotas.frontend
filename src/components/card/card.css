@@ -4,8 +4,7 @@
     background-color: #D7D2CB;
     border-radius: 2rem;
     padding: 1rem;
-    max-width: 50rem;
-    min-width: 10rem;
+    width: 30rem;
     gap: 1rem;
     box-shadow: 0px 7px 29px 0px;
 }
@@ -14,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .card .headerCard .title {

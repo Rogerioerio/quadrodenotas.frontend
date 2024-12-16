@@ -1,0 +1,45 @@
+.container-forms {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D7D2CB;
+    border-radius: 1rem;
+    width: 35rem;
+    height: 100%;
+    padding: 1rem;
+    box-shadow: 0px 7px 29px 0px;
+}
+
+.container-inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    gap: .5rem;
+}
+
+.inputTitle {
+    font-size: 1.25rem;
+    text-align: left;
+    padding: .3rem;
+    width: 80%;
+    height: 1.5rem;
+}
+
+.inputContent {
+    font-size: 1.25rem;
+
+    padding: .3rem;
+    width: 80%;
+    height: 5rem;
+}
+
+.submitNote {
+    text-align: center;
+    font-size: 1.25rem;
+    height: 2.5rem;
+    width: 50%;
+    padding: .25rem;
+}

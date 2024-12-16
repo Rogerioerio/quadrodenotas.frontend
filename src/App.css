@@ -2,11 +2,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
   margin: 0;
-  background-color: #738276;
-  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
 .card-grid {

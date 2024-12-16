@@ -9,7 +9,7 @@ interface CardProps {
 
 export function Card ({ annot_id, title, content, instant }: CardProps) {
     return(
-        <div className="card" id={annot_id.toLocaleString()}>
+        <div className="card" key={annot_id}>
             <div className="headerCard">
                 <h1 className="title">{title}</h1>
                 <label className="date">{instant}</label>
